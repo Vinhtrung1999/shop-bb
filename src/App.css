@@ -1,6 +1,7 @@
 html{
     box-sizing: border-box;
 }
+
 /* header */
 .nav-header{
     height: "50px";
@@ -53,57 +54,9 @@ html{
     background-color: #ffffff;
     width: 300px;
     right: 40px;
-    top: 50px;
+    top: 40px;
     box-shadow: 5px 10px 15px 0px #00000050;
     overflow: hidden;
-}
-
-@keyframes cart-show-out{
-    0%{
-        height: 0px;
-        opacity: 50%;
-    }
-    50%{
-        opacity: 80%;
-    }
-    100%{
-        height: 300px;
-    }
-}
-
-@keyframes cart-show-in{
-    0%{
-        height: 300px;
-    }
-    50%{
-        opacity: 80%;
-    }
-    100%{
-        height: 0px;
-        opacity: 50%;
-        visibility: hidden;
-    }
-}
-
-
-@media only screen and (max-width: 600px) {
-    .cart-content {
-        right: 0;
-        top: 50px;
-    }
-
-    .right-icon-cart{
-        margin-right: 10px;
-        margin-left: 0px;
-    }
-
-    .right-icon-search{
-        margin-right: 5px;
-    }
-
-    .center-header img{
-        width: 100px;
-    }
 }
 
 .cart-content-item{
@@ -162,31 +115,6 @@ html{
     overflow: hidden;
 }
 
-@keyframes showSearch {
-    0%{
-        height: 40vh;
-        opacity: 50%;
-    }
-    100%{
-        height: 100vh;
-        opacity: 100%;
-    }
-}
-
-
-@keyframes closeSearch {
-    0%{
-        height: 100vh;
-        opacity: 100%;
-    }
-
-    100%{
-        height: 10vh;
-        opacity: 20%;
-        visibility: hidden;
-    }
-}
-
 .icon-close{
     margin: 10px;
     font-size: 32px;
@@ -235,15 +163,6 @@ html{
     outline: none;
 }
 
-@keyframes loop{
-    0%{
-        transform: rotateY(180deg)
-    }
-    100%{
-        transform: rotateY(-180deg)
-    }
-}
-
 /*  */
 .pCustom{
     padding: 10px;
@@ -256,18 +175,6 @@ html{
 .filterImgs:hover{
     filter: grayscale(0%);
     animation: filter 3s;
-}
-
-@keyframes filter {
-    0%{
-        filter: grayscale(60%);
-    }
-    30%{
-        filter: grayscale(30%);
-    }
-    100%{
-        filter: grayscale(0%);
-    }
 }
 
 .card{
@@ -308,17 +215,6 @@ html{
     animation:  showChoose 3s ease;
 }
 
-@keyframes showChoose {
-    0%{
-        transform: translateX(-30px);
-    }
-    5%{
-        transform: translateX(-15px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
 footer{
     background-color: #000000;
     color: white;
@@ -355,7 +251,7 @@ footer a:hover{
     font-size: 20px;
 }
 
-body{
+.home-page{
     background-image: url('https://bobui.vn/assets/img/banner/6.jpg');
     background-position: bottom;
     background-repeat: no-repeat;
@@ -402,15 +298,6 @@ body{
     color: red;
     text-decoration: underline;
     animation: link-below-content 1s forwards;
-}
-
-@keyframes link-below-content{
-    0%{
-        text-shadow: 5px 4px 2px #494949;
-    }
-    100%{
-        text-shadow: 10px 7px 2px #494949;
-    }
 }
 
 .dropdown{
@@ -489,6 +376,241 @@ body{
 .link-dropdown-sub-content:hover{
     color: black;
     text-decoration: underline;
+}
+
+.btn-all-product{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px;
+    border: solid 1px #000000;
+    padding-left: 48px;
+    padding-right: 48px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.btn-all-product:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Login page */
+.form-area{
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding-left: 11vw;
+    padding-right: 11vw;
+}
+
+.form-area-left{
+    padding: 15px;
+}
+
+.form-area-right{
+    padding: 15px;
+}
+
+.form-login-content{
+    border: solid 1px #000000;
+    padding: 25px;
+    height: 390px;
+}
+
+.form-login-header{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.form-login-tittle{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-login-elm{
+    margin-bottom: 10px;
+}
+
+.form-login-input{
+    width: 100%;
+    height: 40px;
+    border: solid 1px #000000;
+}
+
+.form-login-input:focus{
+    outline: none;
+}
+
+.btn-submit{
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    margin-top: 25px;
+    padding: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+}
+
+.remember-pass{
+    margin-top: 20px;
+    font-weight: 650;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.forget-pass{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.link-forget-pass{
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.link-forget-pass:hover{
+    color: black;
+}
+
+.form-login{
+    border-top: rgba(0, 0, 0, 0.267) solid 1px;
+    padding-top: 25px;
+}
+
+/* media */
+
+@media only screen and (max-width: 990px) {
+    .form-area{
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .form-login-content{
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cart-content {
+        right: 0;
+        top: 50px;
+    }
+
+    .right-icon-cart{
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+
+    .right-icon-search{
+        margin-right: 5px;
+    }
+
+    .center-header img{
+        width: 100px;
+    }
+}
+
+/* keyframe */
+@keyframes cart-show-out{
+    0%{
+        height: 0px;
+        opacity: 50%;
+    }
+    50%{
+        opacity: 80%;
+    }
+    100%{
+        height: 300px;
+    }
+}
+
+@keyframes cart-show-in{
+    10%{
+        height: 300px;
+    }
+    50%{
+        opacity: 80%;
+    }
+    100%{
+        height: 0px;
+        opacity: 50%;
+        visibility: hidden;
+    }
+}
+
+@keyframes showSearch {
+    0%{
+        height: 40vh;
+        opacity: 50%;
+    }
+    100%{
+        height: 100vh;
+        opacity: 100%;
+    }
+}
+
+
+@keyframes closeSearch {
+    0%{
+        height: 100vh;
+        opacity: 100%;
+    }
+
+    100%{
+        height: 10vh;
+        opacity: 20%;
+        visibility: hidden;
+    }
+}
+
+@keyframes loop{
+    0%{
+        transform: rotateY(180deg)
+    }
+    100%{
+        transform: rotateY(-180deg)
+    }
+}
+
+@keyframes filter {
+    0%{
+        filter: grayscale(60%);
+    }
+    30%{
+        filter: grayscale(30%);
+    }
+    100%{
+        filter: grayscale(0%);
+    }
+}
+
+
+@keyframes showChoose {
+    0%{
+        transform: translateX(-30px);
+    }
+    5%{
+        transform: translateX(-15px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes link-below-content{
+    0%{
+        text-shadow: 5px 4px 2px #494949;
+    }
+    100%{
+        text-shadow: 10px 7px 2px #494949;
+    }
 }
 
 @keyframes dropdown-out {

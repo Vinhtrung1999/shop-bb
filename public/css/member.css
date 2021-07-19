@@ -1,0 +1,83 @@
+.member-header{
+    background-image: url('https://bobui.vn/assets/img/banner/20.jpg');
+    height: 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.member-header-tittle{
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+}
+
+.member-header-link{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.308);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.member-header-link:hover{
+    opacity: 80%;
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+.member-content{
+    margin: 30px;
+}
+
+.tb-member{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.tb-header{
+    background-color: #4a4d4f;
+    color: #ffffff;
+}
+
+.tb-header th{
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+.tb-member tr td{
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+/* rank */
+.small-rank{
+    display: none;
+}
+.small-rank-tittle{
+    margin-top: 10px;
+}
+.small-rank-content{
+    border-left: solid 5px rgba(0, 0, 0, 0.116);
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.small-rank-content div{
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .small-rank{
+        display: block;
+    }
+
+    .tb-member{
+        display: none;
+    }
+}

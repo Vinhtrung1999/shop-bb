@@ -14,7 +14,7 @@ class Cart extends Component{
     onHoverCart = () => {
         this.setState({
             animation: true,
-            start: false
+            start: false,
         })
     }
 
@@ -33,7 +33,8 @@ class Cart extends Component{
         }
         else{
             return {
-                animation: this.state.animation ? 'cart-show-out 0.3s ease-in forwards' : 'cart-show-in 0.3s ease-in forwards'
+                display: 'block',
+                animation: this.state.animation ? 'cart-show-out 0.3s ease-in' : 'cart-show-in 0.3s ease-in forwards'          
             }
         }
         
@@ -41,16 +42,15 @@ class Cart extends Component{
 
     render(){
         return(
-            <div className="right-icon-cart">
-                <Link to="/" className="cart-tittle" onMouseMove={ this.onHoverCart } onMouseLeave={ this.onUnHoverCart }>
-                    <i className="fa fa-shopping-cart" aria-hidden="true"></i>100
+            <div className="right-icon-cart" onMouseMove={ this.onHoverCart } onMouseLeave={ this.onUnHoverCart }>
+                <Link to="/login" className="cart-tittle">
+                    <i className="fa fa-shopping-cart" aria-hidden="true"></i> <span style={{color:'red'}}>3</span>
                 </Link>
-                <div className="cart-content" style={ this.setStyle() } onMouseMove={ this.onHoverCart } onMouseLeave={ this.onUnHoverCart }>
+                <div className="cart-content" style={ this.setStyle() }>
                     <div className="cart-content-item">
                         <CartItem></CartItem>
                         <CartItem></CartItem>
                         <CartItem></CartItem>
-                        
                         <Total></Total>
                         <button className="btn-pay">THANH TOÁN</button>
                     </div>

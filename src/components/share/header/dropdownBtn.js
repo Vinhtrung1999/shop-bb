@@ -60,8 +60,8 @@ class DropdownBtn extends Component{
                                 <Link className='link-dropdown-sub-content' to="">ACCESSORIES</Link>
                         </div>
                         <Link className='link-dropdown-content' to="">SALE</Link>
-                        <Link className='link-dropdown-content' to="">MEMBER</Link>
-                        <Link className='link-dropdown-content' to="">SIGNUP/LOGIN</Link>
+                        <Link className='link-dropdown-content' to="/member">MEMBER</Link>
+                        <Link className='link-dropdown-content' to="/login">ĐĂNG NHẬP / ĐĂNG KÝ</Link>
                    
                 </div>
             </div>
