@@ -50,19 +50,18 @@ class DropdownBtn extends Component{
                     <i className="fa fa-bars" aria-hidden="true"></i>
                 </button>
                 <div style={ this.setStyle() } className="dropdown-content">
-                        <button className='link-dropdown-content show-link-products' onClick={ this.setOnClickSub }>SHOP</button>
-                        <div style={ this.setStyleSub() } className="dropdown-sub-content">
-                                <Link className='link-dropdown-sub-content' to="">ALL PRODUCTS</Link>
-                                <Link className='link-dropdown-sub-content' to="">TOPS</Link>
-                                <Link className='link-dropdown-sub-content' to="">BOTTOMS</Link>
-                                <Link className='link-dropdown-sub-content' to="">OUTERWEAR</Link>
-                                <Link className='link-dropdown-sub-content' to="">DENIM</Link>
-                                <Link className='link-dropdown-sub-content' to="">ACCESSORIES</Link>
-                        </div>
-                        <Link className='link-dropdown-content' to="">SALE</Link>
-                        <Link className='link-dropdown-content' to="/member">MEMBER</Link>
-                        <Link className='link-dropdown-content' to="/login">ĐĂNG NHẬP / ĐĂNG KÝ</Link>
-                   
+                    <button className='link-dropdown-content show-link-products' onClick={ this.setOnClickSub }>SHOP</button>
+                    <div style={ this.setStyleSub() } className="dropdown-sub-content">
+                        <Link className='link-dropdown-sub-content' to="/shop">ALL PRODUCTS</Link>
+                        <Link className='link-dropdown-sub-content' to="">TOPS</Link>
+                        <Link className='link-dropdown-sub-content' to="">BOTTOMS</Link>
+                        <Link className='link-dropdown-sub-content' to="">OUTERWEAR</Link>
+                        <Link className='link-dropdown-sub-content' to="">DENIM</Link>
+                        <Link className='link-dropdown-sub-content' to="">ACCESSORIES</Link>
+                    </div>
+                    <Link className='link-dropdown-content' to="">SALE</Link>
+                    <Link className='link-dropdown-content' to="/member">MEMBER</Link>
+                    <Link className='link-dropdown-content' to="/login">ĐĂNG NHẬP / ĐĂNG KÝ</Link>
                 </div>
             </div>
         )

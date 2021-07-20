@@ -4,7 +4,7 @@ class ImageHeader extends Component{
         return(
             <div style={
                 {
-                    backgroundImage: `url('./images/20210403.jpg')`,
+                    backgroundImage: `url('/images/20210403.jpg')`,
                     backgroundRepeat: ' no-repeat',
                     height: '100vh',
                     backgroundPosition: "center",

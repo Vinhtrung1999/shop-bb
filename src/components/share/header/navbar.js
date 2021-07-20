@@ -10,7 +10,7 @@ class Navbar extends Component {
                     <DropdownBtn></DropdownBtn>
                 </div>
                 <div className="center-header">
-                    <Link to="/"><img src="./images/logo-black.svg" width='150px'></img></Link>
+                    <Link to="/"><img src="/images/logo-black.svg" width='150px'></img></Link>
                 </div>
                 <div className="right-header">
                     <RightIcon></RightIcon>

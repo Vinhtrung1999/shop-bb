@@ -195,6 +195,10 @@ html{
     position: relative;
 }
 
+.block-img{
+    width: 100%;
+}
+
 .block-img:hover{
     opacity: 90%;
 }
@@ -631,4 +635,67 @@ footer a:hover{
         opacity: 0;
         visibility: hidden;
     }
+}
+
+/* test */
+
+/* width */
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track:horizontal {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: rgba(0, 0, 0, 0.151); 
+    border-radius: 10px;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background: #00000052; 
+}
+
+::-webkit-scrollbar-track:vertical {
+    box-shadow: inset 0 0 5px rgb(7, 7, 7); 
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background: rgba(0, 0, 0, 0.151); 
+}
+  
+
+::-webkit-scrollbar-thumb:vertical:hover {
+    background: rgba(0, 0, 0, 0.445); 
+}
+
+.test{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.test-part1, .test-part2{
+    display: flex;
+    width:100%;
+    flex-wrap: nowrap;
+}
+
+.test img {
+    margin: 20px;
+}
+
+.product-top{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.product-content{
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
