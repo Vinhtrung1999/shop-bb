@@ -5,7 +5,7 @@ class BlockProducts extends Component{
         super(props)
         this.state = {
             choosedisplay : 'none',
-            img : this.props.product.imgMain
+            img : this.props.product.img[0]
         }
     }
 
@@ -18,13 +18,13 @@ class BlockProducts extends Component{
     setHoverMove = (product) => {
         this.setState({
             choosedisplay : 'block',
-            img : product.imgChange
+            img : product.img[1]
         })
     }
     setHoverLeave = (product) => {
         this.setState({
             choosedisplay : 'none',
-            img: product.imgMain
+            img: product.img[0]
         })
     }
     render(){
@@ -44,7 +44,7 @@ class BlockProducts extends Component{
                     <div className="card-body">
                         <div className="card-title text-center">
                             <Link
-                                to={'/product/${product.id}'}
+                                to={`/product/${product.id}`}
                                 className="blockName"
                             >{ product.name }</Link>
                         </div>
